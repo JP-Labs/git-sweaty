@@ -49,6 +49,10 @@ function isDesktopLikeViewport() {
   return !isNarrowLayoutViewport();
 }
 
+function shouldUseStableMobileSectionLayout() {
+  return isTouch && isNarrowLayoutViewport();
+}
+
 function requestLayoutAlignment() {
   if (pendingAlignmentFrame !== null) {
     window.cancelAnimationFrame(pendingAlignmentFrame);
@@ -240,6 +244,7 @@ function buildSectionLayoutPlan(list) {
   const frequencyCard = list.querySelector(".labeled-card-row-frequency .more-stats");
   const yearCards = Array.from(list.querySelectorAll(".labeled-card-row-year .year-card"));
   if (!frequencyCard && !yearCards.length) return null;
+  const useStableMobileSectionLayout = shouldUseStableMobileSectionLayout();
 
   const yearGraphWidths = yearCards
     .map((card) => getElementBoxWidth(card.querySelector(".heatmap-area")))
@@ -279,30 +284,32 @@ function buildSectionLayoutPlan(list) {
     ...yearCards,
   ];
 
-  let shouldStackSection = false;
-  const desktopLike = isDesktopLikeViewport();
-  cards.forEach((card) => {
-    const statsColumn = card.classList.contains("more-stats")
-      ? card.querySelector(".more-stats-facts.side-stats-column")
-      : card.querySelector(".card-stats.side-stats-column");
-    if (!statsColumn) return;
+  let shouldStackSection = useStableMobileSectionLayout;
+  if (!useStableMobileSectionLayout) {
+    const desktopLike = isDesktopLikeViewport();
+    cards.forEach((card) => {
+      const statsColumn = card.classList.contains("more-stats")
+        ? card.querySelector(".more-stats-facts.side-stats-column")
+        : card.querySelector(".card-stats.side-stats-column");
+      if (!statsColumn) return;
 
-    const measuredMain = card.classList.contains("more-stats")
-      ? getElementBoxWidth(card.querySelector(".more-stats-grid"))
-      : getElementBoxWidth(card.querySelector(".heatmap-area"));
-    const mainWidth = graphRailWidth > 0 ? graphRailWidth : measuredMain;
-    const statsWidth = getElementBoxWidth(statsColumn);
-    const sideGap = readCssVar("--stats-column-gap", 12, card);
-    const requiredWidth = mainWidth + sideGap + statsWidth;
-    const availableWidth = getElementContentWidth(card);
-    const overflow = requiredWidth - availableWidth;
-    const tolerance = desktopLike
-      ? readCssVar("--stack-overflow-tolerance-desktop", 0, card)
-      : 0;
-    if (overflow > tolerance) {
-      shouldStackSection = true;
-    }
-  });
+      const measuredMain = card.classList.contains("more-stats")
+        ? getElementBoxWidth(card.querySelector(".more-stats-grid"))
+        : getElementBoxWidth(card.querySelector(".heatmap-area"));
+      const mainWidth = graphRailWidth > 0 ? graphRailWidth : measuredMain;
+      const statsWidth = getElementBoxWidth(statsColumn);
+      const sideGap = readCssVar("--stats-column-gap", 12, card);
+      const requiredWidth = mainWidth + sideGap + statsWidth;
+      const availableWidth = getElementContentWidth(card);
+      const overflow = requiredWidth - availableWidth;
+      const tolerance = desktopLike
+        ? readCssVar("--stack-overflow-tolerance-desktop", 0, card)
+        : 0;
+      if (overflow > tolerance) {
+        shouldStackSection = true;
+      }
+    });
+  }
 
   return {
     frequencyCard,
@@ -358,7 +365,11 @@ function applySectionLayoutPlan(plan) {
       const keepChipsWithTitle = shouldStackSection;
       if (keepChipsWithTitle) {
         title.appendChild(metricChipRow);
-        alignFrequencyMetricChipsToSecondGraphAxis(frequencyCard, title, metricChipRow);
+        if (shouldUseStableMobileSectionLayout()) {
+          metricChipRow.style.removeProperty("margin-left");
+        } else {
+          alignFrequencyMetricChipsToSecondGraphAxis(frequencyCard, title, metricChipRow);
+        }
       } else if (facts.firstElementChild !== metricChipRow) {
         metricChipRow.style.removeProperty("margin-left");
         facts.insertBefore(metricChipRow, facts.firstChild);
