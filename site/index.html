@@ -1326,24 +1326,27 @@
         }
         #resetAllRow {
           display: grid;
-          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          grid-template-columns: minmax(0, 1fr) 86px;
           grid-column: 1;
           grid-row: 4;
           width: min(360px, 100%);
           margin-inline: 0;
           gap: 8px;
-          align-items: stretch;
+          align-items: start;
         }
         #resetAllRow .units-toggle {
-          width: 100%;
+          width: fit-content;
+          max-width: 100%;
+          justify-self: start;
         }
         #resetAllRow .units-toggle-button {
-          flex: 1 1 50%;
+          flex: 0 0 auto;
           min-width: 0;
         }
         #resetAllRow .filter-clear-button {
           width: 100%;
-          min-width: 0;
+          min-width: 86px;
+          justify-self: stretch;
         }
         .repo-link {
           grid-column: 1;
