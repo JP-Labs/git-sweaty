@@ -290,9 +290,11 @@
         transition: border-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
       }
 
-      .filter-clear-button:hover:not(:disabled) {
-        border-color: var(--accent);
-        box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+      @media (hover: hover) and (pointer: fine) {
+        .filter-clear-button:hover:not(:disabled) {
+          border-color: var(--accent);
+          box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+        }
       }
 
       .filter-clear-button:disabled {
