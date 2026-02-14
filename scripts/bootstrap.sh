@@ -24,16 +24,16 @@ have_cmd() {
 prompt_yes_no() {
   local prompt="$1"
   local default="${2:-Y}"
-  local suffix="[y/N]"
+  local suffix="[y/n] (default: n)"
   local answer
 
   if [[ "$default" == "Y" ]]; then
-    suffix="[Y/n]"
+    suffix="[y/n] (default: y)"
   fi
 
   while true; do
     read -r -p "$prompt $suffix " answer || return 1
-    answer="${answer,,}"
+    answer="$(printf '%s' "$answer" | tr '[:upper:]' '[:lower:]')"
     case "$answer" in
       "")
         [[ "$default" == "Y" ]] && return 0 || return 1
@@ -179,7 +179,7 @@ main() {
       run_setup "$local_root" "${setup_args[@]}"
     else
       info "Skipped setup. Run this when ready:"
-      info "  (cd \"$local_root\" && python3 $SETUP_SCRIPT_REL)"
+      info "  (cd \"$local_root\" && ./scripts/bootstrap.sh)"
     fi
     return 0
   fi
@@ -203,7 +203,7 @@ main() {
     run_setup "$repo_dir" "${setup_args[@]}"
   else
     info "Setup not run. Next step:"
-    info "  (cd \"$repo_dir\" && python3 $SETUP_SCRIPT_REL)"
+    info "  (cd \"$repo_dir\" && ./scripts/bootstrap.sh)"
   fi
 }
 
