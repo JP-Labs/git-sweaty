@@ -154,7 +154,6 @@ clone_upstream() {
 run_setup() {
   local repo_root="$1"
   shift || true
-  local setup_args=("$@")
 
   [[ -f "$repo_root/$SETUP_SCRIPT_REL" ]] || fail "Missing setup script: $repo_root/$SETUP_SCRIPT_REL"
   ensure_gh_auth
@@ -162,11 +161,10 @@ run_setup() {
 
   info ""
   info "Launching setup script..."
-  (cd "$repo_root" && python3 "$SETUP_SCRIPT_REL" "${setup_args[@]}")
+  (cd "$repo_root" && python3 "$SETUP_SCRIPT_REL" "$@")
 }
 
 main() {
-  local setup_args=("$@")
   local upstream_repo="$DEFAULT_UPSTREAM_REPO"
   local repo_dir local_root
 
@@ -176,7 +174,7 @@ main() {
   if local_root="$(detect_local_repo_root)"; then
     info "Detected local clone: $local_root"
     if prompt_yes_no "Run setup now?" "Y"; then
-      run_setup "$local_root" "${setup_args[@]}"
+      run_setup "$local_root" "$@"
     else
       info "Skipped setup. Run this when ready:"
       info "  (cd \"$local_root\" && ./scripts/bootstrap.sh)"
@@ -200,7 +198,7 @@ main() {
   fi
 
   if prompt_yes_no "Run setup now?" "Y"; then
-    run_setup "$repo_dir" "${setup_args[@]}"
+    run_setup "$repo_dir" "$@"
   else
     info "Setup not run. Next step:"
     info "  (cd \"$repo_dir\" && ./scripts/bootstrap.sh)"
