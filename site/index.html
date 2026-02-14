@@ -1263,9 +1263,10 @@
         }
         header {
           --mobile-header-padding-inline: 16px;
-          --mobile-header-padding-block: 16px;
-          --mobile-header-row-gap: 4px;
-          --mobile-control-row-gap: 8px;
+          --mobile-stack-gap: 8px;
+          --mobile-header-padding-block: var(--mobile-stack-gap);
+          --mobile-header-row-gap: var(--mobile-stack-gap);
+          --mobile-control-row-gap: var(--mobile-stack-gap);
           padding: var(--mobile-header-padding-block) var(--mobile-header-padding-inline);
         }
         .card {
@@ -1341,7 +1342,6 @@
           grid-row: 4;
           width: min(360px, 100%);
           justify-self: center;
-          margin-top: calc(var(--mobile-control-row-gap) - var(--mobile-header-row-gap));
           gap: var(--mobile-control-row-gap);
           align-items: start;
         }
@@ -1363,7 +1363,6 @@
           grid-column: 1;
           grid-row: 5;
           justify-self: center;
-          margin-top: calc(var(--mobile-header-padding-block) - var(--mobile-header-row-gap));
         }
         .summary {
           grid-template-columns: repeat(3, minmax(0, 1fr));
