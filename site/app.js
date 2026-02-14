@@ -40,6 +40,8 @@ const BREAKPOINTS = Object.freeze({
   NARROW_LAYOUT_MAX: 900,
 });
 let pendingAlignmentFrame = null;
+let persistentSideStatCardWidth = 0;
+let persistentSideStatCardMinHeight = 0;
 
 function isNarrowLayoutViewport() {
   return window.matchMedia(`(max-width: ${BREAKPOINTS.NARROW_LAYOUT_MAX}px)`).matches;
@@ -209,6 +211,7 @@ function resetCardLayoutState() {
 
 function normalizeSideStatCardSize() {
   if (!heatmaps) return;
+  const configuredMinWidth = readCssVar("--side-stat-card-width-min", 0, heatmaps);
   const cards = Array.from(
     heatmaps.querySelectorAll(
       ".year-card .card-stats.side-stats-column .card-stat, .more-stats .more-stats-fact-card",
@@ -220,19 +223,32 @@ function normalizeSideStatCardSize() {
     card.style.removeProperty("minHeight");
   });
   if (!cards.length) {
-    heatmaps.style.removeProperty("--side-stat-card-width");
-    heatmaps.style.removeProperty("--side-stat-card-min-height");
+    if (persistentSideStatCardWidth > 0) {
+      heatmaps.style.setProperty("--side-stat-card-width", `${persistentSideStatCardWidth}px`);
+    } else if (configuredMinWidth > 0) {
+      heatmaps.style.setProperty("--side-stat-card-width", `${configuredMinWidth}px`);
+    } else {
+      heatmaps.style.removeProperty("--side-stat-card-width");
+    }
+    if (persistentSideStatCardMinHeight > 0) {
+      heatmaps.style.setProperty("--side-stat-card-min-height", `${persistentSideStatCardMinHeight}px`);
+    } else {
+      heatmaps.style.removeProperty("--side-stat-card-min-height");
+    }
     return;
   }
 
   const maxWidth = cards.reduce((acc, card) => Math.max(acc, Math.ceil(getElementBoxWidth(card))), 0);
   const maxHeight = cards.reduce((acc, card) => Math.max(acc, Math.ceil(card.getBoundingClientRect().height || 0)), 0);
+  const normalizedWidth = Math.max(maxWidth, Math.ceil(configuredMinWidth));
+  persistentSideStatCardWidth = Math.max(persistentSideStatCardWidth, normalizedWidth);
+  persistentSideStatCardMinHeight = Math.max(persistentSideStatCardMinHeight, maxHeight);
 
-  if (maxWidth > 0) {
-    heatmaps.style.setProperty("--side-stat-card-width", `${maxWidth}px`);
+  if (persistentSideStatCardWidth > 0) {
+    heatmaps.style.setProperty("--side-stat-card-width", `${persistentSideStatCardWidth}px`);
   }
-  if (maxHeight > 0) {
-    heatmaps.style.setProperty("--side-stat-card-min-height", `${maxHeight}px`);
+  if (persistentSideStatCardMinHeight > 0) {
+    heatmaps.style.setProperty("--side-stat-card-min-height", `${persistentSideStatCardMinHeight}px`);
   }
 }
 
@@ -2719,6 +2735,10 @@ async function init() {
 
   function setMenuLabel(labelEl, text, fallbackText) {
     if (!labelEl) return;
+    if (isNarrowLayoutViewport() && fallbackText && fallbackText !== text) {
+      labelEl.textContent = fallbackText;
+      return;
+    }
     labelEl.textContent = text;
     if (!fallbackText || fallbackText === text) return;
     if (!isNarrowLayoutViewport()) return;

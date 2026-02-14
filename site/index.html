@@ -44,6 +44,7 @@
         --summary-card-max-width: 212px;
         --summary-grid-gap: 15px;
         --summary-desktop-columns: 5;
+        --side-stat-card-width-min: 124px;
         --dashboard-content-rail-width: calc(
           (var(--summary-desktop-columns) * var(--summary-card-max-width)) +
           ((var(--summary-desktop-columns) - 1) * var(--summary-grid-gap))
@@ -147,6 +148,7 @@
         grid-column: 2;
         grid-row: 2;
         display: none;
+        min-width: 0;
       }
 
       .filter-control-row {
@@ -155,15 +157,18 @@
         justify-content: center;
         gap: 8px;
         width: 100%;
+        min-width: 0;
       }
 
       .filter-menu {
         position: relative;
         min-width: 190px;
+        max-width: 100%;
       }
 
       .filter-menu-button {
         width: 100%;
+        min-width: 0;
         background: var(--bg-2);
         color: var(--text);
         border: 1px solid rgba(148, 163, 184, 0.3);
@@ -209,6 +214,9 @@
         top: calc(100% + 6px);
         left: 0;
         right: 0;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
         z-index: 20;
         background: var(--bg-2);
         border: 1px solid rgba(148, 163, 184, 0.35);
@@ -225,6 +233,7 @@
 
       .filter-menu-option {
         width: 100%;
+        min-width: 0;
         background: rgba(15, 23, 42, 0.45);
         color: var(--text);
         border: 1px solid rgba(148, 163, 184, 0.25);
@@ -1236,17 +1245,26 @@
           display: flex;
           flex-direction: column;
           width: min(360px, 100%);
-          align-items: center;
+          align-items: stretch;
           gap: 8px;
+        }
+        .filter-control-row {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) 86px;
+          align-items: flex-start;
+          width: 100%;
         }
         .filter-menu {
           min-width: 0;
-          width: auto;
-          flex: 1 1 auto;
+          width: 100%;
+          max-width: 100%;
+          flex: 0 1 auto;
         }
         .filter-menu-options {
           position: static;
           margin-top: 8px;
+          width: 100%;
+          max-width: 100%;
         }
         .button-row {
           display: none;
