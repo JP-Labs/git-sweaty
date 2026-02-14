@@ -2341,7 +2341,16 @@ async function init() {
     normalizeValue = (value) => value,
   }) {
     if (rawValue === "all") {
-      return { allMode: true, selectedValues: new Set() };
+      if (!allValues.length) {
+        return { allMode: true, selectedValues: new Set() };
+      }
+      const hasExplicitAllSelection = !allMode
+        && selectedValues.size === allValues.length
+        && allValues.every((value) => selectedValues.has(value));
+      if (hasExplicitAllSelection) {
+        return { allMode: true, selectedValues: new Set() };
+      }
+      return { allMode: false, selectedValues: new Set(allValues) };
     }
     const normalizedValue = normalizeValue(rawValue);
     if (!allValues.includes(normalizedValue)) {
@@ -2569,13 +2578,17 @@ async function init() {
     return visibleYears.filter((year) => selectedYears.has(Number(year)));
   }
 
-  function updateButtonState(container, selectedValues, isAllSelected, normalizeValue) {
+  function updateButtonState(container, selectedValues, isAllSelected, allValues, normalizeValue) {
     if (!container) return;
+    const hasExplicitAllSelection = allValues.length > 0
+      && !isAllSelected
+      && selectedValues.size === allValues.length
+      && allValues.every((value) => selectedValues.has(value));
     container.querySelectorAll(".filter-button").forEach((button) => {
       const rawValue = String(button.dataset.value || "");
       const value = normalizeValue ? normalizeValue(rawValue) : rawValue;
       const isActive = rawValue === "all"
-        ? isAllSelected
+        ? hasExplicitAllSelection
         : (!isAllSelected && selectedValues.has(value));
       button.classList.toggle("active", isActive);
     });
@@ -2650,10 +2663,8 @@ async function init() {
   }
 
   function finalizeTypeSelection() {
-    if (!areAllTypesSelected() && selectedTypes.size === payload.types.length) {
-      allTypesMode = true;
-      selectedTypes.clear();
-    }
+    if (areAllTypesSelected()) return;
+    selectedTypes = new Set(payload.types.filter((type) => selectedTypes.has(type)));
   }
 
   function finalizeYearSelection() {
@@ -2770,8 +2781,8 @@ async function init() {
     });
 
     if (menuOnly) {
-      updateButtonState(typeButtons, selectedTypes, allTypesSelected);
-      updateButtonState(yearButtons, selectedYears, allYearsSelected, (v) => Number(v));
+      updateButtonState(typeButtons, selectedTypes, allTypesSelected, payload.types);
+      updateButtonState(yearButtons, selectedYears, allYearsSelected, currentVisibleYears, (v) => Number(v));
       const typeMenuText = getTypeMenuText(
         typeMenuTypes,
         typeMenuSelection.allMode || typeMenuTypes.length === payload.types.length,
@@ -2788,7 +2799,14 @@ async function init() {
         !yearMenuSelection.allMode && yearMenuYears.length > 1 ? "Multiple Years Selected" : "",
       );
       if (typeClearButton) {
-        typeClearButton.disabled = areAllTypesSelected();
+        const mobileLayout = isNarrowLayoutViewport();
+        if (mobileLayout && areAllTypesSelected()) {
+          typeClearButton.textContent = "Select All";
+          typeClearButton.disabled = payload.types.length === 0;
+        } else {
+          typeClearButton.textContent = "Clear";
+          typeClearButton.disabled = areAllTypesSelected();
+        }
       }
       if (yearClearButton) {
         yearClearButton.disabled = areAllYearsSelected();
@@ -2862,8 +2880,8 @@ async function init() {
       syncResetAllButtonState();
     };
 
-    updateButtonState(typeButtons, selectedTypes, allTypesSelected);
-    updateButtonState(yearButtons, selectedYears, allYearsSelected, (v) => Number(v));
+    updateButtonState(typeButtons, selectedTypes, allTypesSelected, payload.types);
+    updateButtonState(yearButtons, selectedYears, allYearsSelected, currentVisibleYears, (v) => Number(v));
     const typeMenuText = getTypeMenuText(
       typeMenuTypes,
       typeMenuSelection.allMode || typeMenuTypes.length === payload.types.length,
@@ -2880,7 +2898,14 @@ async function init() {
       !yearMenuSelection.allMode && yearMenuYears.length > 1 ? "Multiple Years Selected" : "",
     );
     if (typeClearButton) {
-      typeClearButton.disabled = areAllTypesSelected();
+      const mobileLayout = isNarrowLayoutViewport();
+      if (mobileLayout && areAllTypesSelected()) {
+        typeClearButton.textContent = "Select All";
+        typeClearButton.disabled = payload.types.length === 0;
+      } else {
+        typeClearButton.textContent = "Clear";
+        typeClearButton.disabled = areAllTypesSelected();
+      }
     }
     if (yearClearButton) {
       yearClearButton.disabled = areAllYearsSelected();
@@ -3160,6 +3185,16 @@ async function init() {
   }
   if (typeClearButton) {
     typeClearButton.addEventListener("click", () => {
+      const mobileLayout = isNarrowLayoutViewport();
+      if (mobileLayout && areAllTypesSelected()) {
+        if (!payload.types.length) return;
+        draftTypeMenuSelection = null;
+        setMenuOpen(typeMenu, typeMenuButton, false);
+        allTypesMode = false;
+        selectedTypes = new Set(payload.types);
+        update();
+        return;
+      }
       if (areAllTypesSelected()) return;
       draftTypeMenuSelection = null;
       setMenuOpen(typeMenu, typeMenuButton, false);
