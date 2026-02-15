@@ -2278,5 +2278,17 @@
     "start_date_local": "2026-02-14T10:05:33Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-02-15",
+    "distance": 17531.2,
+    "elevation_gain": 196.9,
+    "id": "17406775684",
+    "moving_time": 5645.0,
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-02-15T14:09:49Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
