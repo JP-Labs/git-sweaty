@@ -2830,5 +2830,17 @@
     "start_date_local": "2026-04-11T09:08:42Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-04-12",
+    "distance": 3593.5,
+    "elevation_gain": 107.2,
+    "id": "18078888651",
+    "moving_time": 1445.0,
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-04-12T13:40:23Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
