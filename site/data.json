@@ -1658,6 +1658,20 @@
       "subtype": "Run",
       "type": "Run",
       "year": 2026
+    },
+    {
+      "date": "2026-04-14",
+      "hour": 18,
+      "subtype": "VirtualRide",
+      "type": "VirtualRide",
+      "year": 2026
+    },
+    {
+      "date": "2026-04-15",
+      "hour": 6,
+      "subtype": "Swim",
+      "type": "Swim",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -3599,6 +3613,15 @@
           "distance": 2500.0,
           "elevation_gain": 0.0,
           "moving_time": 2752.0
+        },
+        "2026-04-15": {
+          "activity_ids": [
+            "18113972440"
+          ],
+          "count": 1,
+          "distance": 2525.0,
+          "elevation_gain": 0.0,
+          "moving_time": 2804.0
         }
       },
       "VirtualRide": {
@@ -3718,6 +3741,15 @@
           "distance": 23539.6,
           "elevation_gain": 148.0,
           "moving_time": 3475.0
+        },
+        "2026-04-14": {
+          "activity_ids": [
+            "18108201697"
+          ],
+          "count": 1,
+          "distance": 28394.5,
+          "elevation_gain": 559.8,
+          "moving_time": 5412.0
         }
       },
       "Walk": {
@@ -3751,7 +3783,7 @@
       }
     }
   },
-  "generated_at": "2026-04-14T16:13:25.528595+00:00",
+  "generated_at": "2026-04-15T16:09:50.349082+00:00",
   "other_bucket": "OtherSports",
   "source": "strava",
   "type_meta": {
