@@ -1749,6 +1749,13 @@
       "subtype": "Swim",
       "type": "Swim",
       "year": 2026
+    },
+    {
+      "date": "2026-04-26",
+      "hour": 11,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -3472,6 +3479,15 @@
           "distance": 5085.5,
           "elevation_gain": 63.4,
           "moving_time": 2088.0
+        },
+        "2026-04-26": {
+          "activity_ids": [
+            "18262796626"
+          ],
+          "count": 1,
+          "distance": 4863.7,
+          "elevation_gain": 79.4,
+          "moving_time": 1398.0
         }
       },
       "Swim": {
@@ -3959,7 +3975,7 @@
       }
     }
   },
-  "generated_at": "2026-04-25T15:46:46.007579+00:00",
+  "generated_at": "2026-04-26T15:49:55.784269+00:00",
   "other_bucket": "OtherSports",
   "source": "strava",
   "type_meta": {
