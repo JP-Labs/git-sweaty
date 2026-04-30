@@ -26,22 +26,27 @@ on:
 
 permissions:
   contents: write
+  pages: read
 
 env:
   DASHBOARD_DATA_BRANCH: dashboard-data
+
+concurrency:
+  group: sync-${{ github.repository }}-${{ github.ref_name }}
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -100,11 +105,16 @@ jobs:
           STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          DASHBOARD_STRAVA_PROFILE_URL: ${{ vars.DASHBOARD_STRAVA_PROFILE_URL }}
+          DASHBOARD_STRAVA_ACTIVITY_LINKS: ${{ vars.DASHBOARD_STRAVA_ACTIVITY_LINKS }}
+          DASHBOARD_GARMIN_PROFILE_URL: ${{ vars.DASHBOARD_GARMIN_PROFILE_URL }}
+          DASHBOARD_GARMIN_ACTIVITY_LINKS: ${{ vars.DASHBOARD_GARMIN_ACTIVITY_LINKS }}
           GARMIN_TOKENS_B64: ${{ secrets.GARMIN_TOKENS_B64 }}
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
           DASHBOARD_DISTANCE_UNIT: ${{ vars.DASHBOARD_DISTANCE_UNIT }}
           DASHBOARD_ELEVATION_UNIT: ${{ vars.DASHBOARD_ELEVATION_UNIT }}
+          DASHBOARD_WEEK_START: ${{ vars.DASHBOARD_WEEK_START }}
         run: |
           cat <<CONFIG > config.local.yaml
           source: "${SYNC_SOURCE}"
@@ -117,6 +127,13 @@ jobs:
             client_secret: "${STRAVA_CLIENT_SECRET}"
             refresh_token: "${STRAVA_REFRESH_TOKEN}"
           CONFIG
+            if [[ -n "${DASHBOARD_STRAVA_PROFILE_URL}" ]]; then
+              echo "  profile_url: \"${DASHBOARD_STRAVA_PROFILE_URL}\"" >> config.local.yaml
+            fi
+            normalized_links_value="$(echo "${DASHBOARD_STRAVA_ACTIVITY_LINKS}" | tr '[:upper:]' '[:lower:]' | xargs)"
+            if [[ "${normalized_links_value}" == "1" || "${normalized_links_value}" == "true" || "${normalized_links_value}" == "yes" || "${normalized_links_value}" == "y" || "${normalized_links_value}" == "on" ]]; then
+              echo "  include_activity_urls: true" >> config.local.yaml
+            fi
           else
             cat <<CONFIG >> config.local.yaml
           garmin:
@@ -124,6 +141,13 @@ jobs:
             email: "${GARMIN_EMAIL}"
             password: "${GARMIN_PASSWORD}"
           CONFIG
+            if [[ -n "${DASHBOARD_GARMIN_PROFILE_URL}" ]]; then
+              echo "  profile_url: \"${DASHBOARD_GARMIN_PROFILE_URL}\"" >> config.local.yaml
+            fi
+            normalized_links_value="$(echo "${DASHBOARD_GARMIN_ACTIVITY_LINKS}" | tr '[:upper:]' '[:lower:]' | xargs)"
+            if [[ "${normalized_links_value}" == "1" || "${normalized_links_value}" == "true" || "${normalized_links_value}" == "yes" || "${normalized_links_value}" == "y" || "${normalized_links_value}" == "on" ]]; then
+              echo "  include_activity_urls: true" >> config.local.yaml
+            fi
           fi
 
           if [[ -n "${DASHBOARD_DISTANCE_UNIT}" || -n "${DASHBOARD_ELEVATION_UNIT}" ]]; then
@@ -136,6 +160,11 @@ jobs:
             if [[ -n "${DASHBOARD_ELEVATION_UNIT}" ]]; then
               echo "  elevation: \"${DASHBOARD_ELEVATION_UNIT}\"" >> config.local.yaml
             fi
+          fi
+
+          if [[ -n "${DASHBOARD_WEEK_START}" ]]; then
+            echo "heatmaps:" >> config.local.yaml
+            echo "  week_start: \"${DASHBOARD_WEEK_START}\"" >> config.local.yaml
           fi
 
           echo "Generated config.local.yaml for source=${SYNC_SOURCE}"
@@ -169,8 +198,8 @@ jobs:
           if git ls-remote --exit-code --heads origin "${branch}" >/dev/null; then
             git fetch origin "${branch}"
             rm -rf data site/data.json
-            git checkout "origin/${branch}" -- data || true
-            git checkout "origin/${branch}" -- site/data.json || true
+            git restore --source "origin/${branch}" --worktree -- data || true
+            git restore --source "origin/${branch}" --worktree -- site/data.json || true
             echo "Restored persisted state from ${branch}."
           else
             echo "No ${branch} branch yet; starting with an empty state."
@@ -191,6 +220,8 @@ jobs:
 
       - name: Run pipeline
         env:
+          DASHBOARD_REPO: ${{ vars.DASHBOARD_REPO }}
+          GITHUB_TOKEN: ${{ github.token }}
           UPDATE_README_LINK: ${{ github.event_name != 'workflow_dispatch' || inputs.update_readme_link }}
         run: |
           set -euo pipefail
@@ -202,6 +233,50 @@ jobs:
             args+=(--update-readme-link)
           fi
           python scripts/run_pipeline.py "${args[@]}"
+
+      - name: Stamp repository in site data
+        env:
+          DASHBOARD_REPO: ${{ vars.DASHBOARD_REPO }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          import re
+
+          repo_re = re.compile(r"^[^/\s]+/[^/\s]+$")
+          configured_repo = os.environ.get("DASHBOARD_REPO", "").strip()
+          default_repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+          configured_valid = bool(repo_re.match(configured_repo or ""))
+          default_valid = bool(repo_re.match(default_repo or ""))
+          if (
+              configured_valid
+              and default_valid
+              and configured_repo != default_repo
+              and str(os.environ.get("GITHUB_ACTIONS", "")).strip().lower() == "true"
+          ):
+              repo = default_repo
+          elif configured_valid:
+              repo = configured_repo
+          else:
+              repo = default_repo
+
+          path = "site/data.json"
+          try:
+            with open(path, "r", encoding="utf-8") as handle:
+              payload = json.load(handle)
+          except Exception:
+            payload = {}
+          if not isinstance(payload, dict):
+            payload = {}
+
+          if repo_re.match(repo or ""):
+            payload["repo"] = repo
+
+          with open(path, "w", encoding="utf-8") as handle:
+            json.dump(payload, handle, ensure_ascii=True, indent=2, sort_keys=True)
+            handle.write("\n")
+          PY
 
       - name: Rotate Strava refresh secret (optional)
         env:
@@ -244,6 +319,71 @@ jobs:
             echo "::warning::Failed to update STRAVA_REFRESH_TOKEN automatically. Update it manually."
           fi
 
+      - name: Rotate Garmin token secret (optional)
+        env:
+          SYNC_SOURCE: ${{ env.SYNC_SOURCE }}
+          GARMIN_TOKENS_B64: ${{ secrets.GARMIN_TOKENS_B64 }}
+          GARMIN_SECRET_UPDATE_TOKEN: ${{ secrets.GARMIN_SECRET_UPDATE_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [[ "${SYNC_SOURCE}" != "garmin" ]]; then
+            echo "Skipping Garmin token rotation: source=${SYNC_SOURCE}."
+            exit 0
+          fi
+          if [[ ! -d ".garmin_token_store" ]]; then
+            echo "No local Garmin token store found; skipping token rotation."
+            exit 0
+          fi
+
+          new_token_store="$(python - <<'PY'
+          import base64
+          import io
+          import os
+          import zipfile
+
+          token_dir = ".garmin_token_store"
+          if not os.path.isdir(token_dir):
+              raise SystemExit(0)
+
+          buffer = io.BytesIO()
+          with zipfile.ZipFile(buffer, mode="w", compression=zipfile.ZIP_DEFLATED) as archive:
+              for root, _dirs, files in os.walk(token_dir):
+                  for filename in sorted(files):
+                      full_path = os.path.join(root, filename)
+                      rel_path = os.path.relpath(full_path, token_dir)
+                      info = zipfile.ZipInfo(rel_path)
+                      info.date_time = (1980, 1, 1, 0, 0, 0)
+                      info.compress_type = zipfile.ZIP_DEFLATED
+                      with open(full_path, "rb") as handle:
+                          archive.writestr(info, handle.read())
+          data = buffer.getvalue()
+          print(base64.b64encode(data).decode("ascii") if data else "")
+          PY
+          )"
+          if [[ -z "${new_token_store}" ]]; then
+            echo "No refreshed Garmin token store captured; skipping."
+            exit 0
+          fi
+          if [[ "${new_token_store}" == "${GARMIN_TOKENS_B64}" ]]; then
+            echo "Garmin token store unchanged."
+            exit 0
+          fi
+
+          if [[ -z "${GARMIN_SECRET_UPDATE_TOKEN}" ]]; then
+            echo "::warning::Garmin token store changed, but GARMIN_SECRET_UPDATE_TOKEN is not configured. Update GARMIN_TOKENS_B64 manually."
+            exit 0
+          fi
+          if ! command -v gh >/dev/null 2>&1; then
+            echo "::warning::gh CLI is unavailable on runner; cannot auto-rotate GARMIN_TOKENS_B64."
+            exit 0
+          fi
+
+          if printf '%s' "${new_token_store}" | GH_TOKEN="${GARMIN_SECRET_UPDATE_TOKEN}" gh secret set GARMIN_TOKENS_B64 --repo "${GITHUB_REPOSITORY}" --body -; then
+            echo "Updated GARMIN_TOKENS_B64 from refreshed Garmin token store."
+          else
+            echo "::warning::Failed to update GARMIN_TOKENS_B64 automatically. Update it manually."
+          fi
+
       - name: Commit README link update
         run: |
           set -euo pipefail
@@ -251,8 +391,7 @@ jobs:
             echo "README unchanged."
             exit 0
           fi
-          git add README.md
-          git commit -m "docs: set dashboard URL for this fork"
+          git commit --only -m "docs: set dashboard URL for this fork" -- README.md
           if ! git push origin HEAD:${GITHUB_REF_NAME}; then
             echo "Warning: unable to push README update; continuing without it."
           fi
