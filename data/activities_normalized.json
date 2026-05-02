@@ -3089,5 +3089,18 @@
     "start_date_local": "2026-05-01T09:20:42Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-05-02",
+    "distance": 7074.1,
+    "elevation_gain": 2.8,
+    "id": "18346200021",
+    "moving_time": 2536.0,
+    "name": "Intervallbegleitung in Celle",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-02T14:35:28Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
