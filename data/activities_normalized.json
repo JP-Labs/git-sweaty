@@ -3128,5 +3128,18 @@
     "start_date_local": "2026-05-06T06:03:05Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-07",
+    "distance": 20792.6,
+    "elevation_gain": 28.0,
+    "id": "18407793742",
+    "moving_time": 2649.0,
+    "name": "15s Sprints auf leeren Magen",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-05-07T06:17:18Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
