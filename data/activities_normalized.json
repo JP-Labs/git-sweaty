@@ -3141,5 +3141,31 @@
     "start_date_local": "2026-05-07T06:17:18Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-05-07",
+    "distance": 6021.3,
+    "elevation_gain": 35.9,
+    "id": "18414965807",
+    "moving_time": 1978.0,
+    "name": "Schuhe einlaufen",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-07T18:41:26Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-08",
+    "distance": 2525.0,
+    "elevation_gain": 0.0,
+    "id": "18420917824",
+    "moving_time": 2922.0,
+    "name": "Schwimmen gegen Stress",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-05-08T06:04:37Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
