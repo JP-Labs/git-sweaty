@@ -3167,5 +3167,18 @@
     "start_date_local": "2026-05-08T06:04:37Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-09",
+    "distance": 7053.6,
+    "elevation_gain": 132.8,
+    "id": "18433567658",
+    "moving_time": 2421.0,
+    "name": "Fr\u00fche 7K",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-09T07:42:25Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
