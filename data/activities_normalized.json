@@ -3193,5 +3193,31 @@
     "start_date_local": "2026-05-10T19:55:31Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-05-12",
+    "distance": 31934.9,
+    "elevation_gain": 185.2,
+    "id": "18481342023",
+    "moving_time": 4211.0,
+    "name": "3 x 15min Z2",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-05-12T19:34:30Z",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-13",
+    "distance": 2525.0,
+    "elevation_gain": 0.0,
+    "id": "18486379201",
+    "moving_time": 2896.0,
+    "name": "Sch\u00f6n leer",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-05-13T06:05:59Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
