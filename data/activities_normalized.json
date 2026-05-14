@@ -3219,5 +3219,31 @@
     "start_date_local": "2026-05-13T06:05:59Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-14",
+    "distance": 20622.2,
+    "elevation_gain": 214.8,
+    "id": "18499668643",
+    "moving_time": 3010.0,
+    "name": "40/20 Taper-Intervalle",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-05-14T07:31:07Z",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-14",
+    "distance": 6185.3,
+    "elevation_gain": 24.4,
+    "id": "18505313871",
+    "moving_time": 2119.0,
+    "name": "6K Easy + 3 Strides",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-14T16:26:35Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
