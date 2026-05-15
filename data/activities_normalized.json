@@ -3245,5 +3245,18 @@
     "start_date_local": "2026-05-14T16:26:35Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-05-15",
+    "distance": 1550.0,
+    "elevation_gain": 0.0,
+    "id": "18512389251",
+    "moving_time": 1718.0,
+    "name": "Easy Effort Swim",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-05-15T06:14:22Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
