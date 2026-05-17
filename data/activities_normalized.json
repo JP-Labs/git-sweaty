@@ -3258,5 +3258,18 @@
     "start_date_local": "2026-05-15T06:14:22Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-17",
+    "distance": 21226.0,
+    "elevation_gain": 94.8,
+    "id": "18538973741",
+    "moving_time": 6244.0,
+    "name": "Sub 1h45 HM \u2705",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-17T09:04:15Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
