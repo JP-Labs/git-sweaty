@@ -3271,5 +3271,18 @@
     "start_date_local": "2026-05-17T09:04:15Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-05-19",
+    "distance": 27242.4,
+    "elevation_gain": 300.4,
+    "id": "18569546477",
+    "moving_time": 3879.0,
+    "name": "Reifenwechsel",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-05-19T16:34:23Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
