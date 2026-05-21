@@ -3297,5 +3297,18 @@
     "start_date_local": "2026-05-20T06:09:14Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-21",
+    "distance": 8086.7,
+    "elevation_gain": 3.5,
+    "id": "18590714030",
+    "moving_time": 2874.0,
+    "name": "Lockere 8K in M\u00fcnchen",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-21T06:20:48Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
