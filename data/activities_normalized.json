@@ -3310,5 +3310,44 @@
     "start_date_local": "2026-05-21T06:20:48Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-05-24",
+    "distance": 43206.8,
+    "elevation_gain": 346.2,
+    "id": "18638705823",
+    "moving_time": 6498.0,
+    "name": "Granatapfel-Sorbet \ud83c\udf67",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-05-24T17:33:31Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-25",
+    "distance": 38497.8,
+    "elevation_gain": 454.2,
+    "id": "18646453819",
+    "moving_time": 6058.0,
+    "name": "Zum See",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-05-25T11:18:02Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-25",
+    "distance": 1090.8,
+    "elevation_gain": 0.0,
+    "id": "18649127209",
+    "moving_time": 1260.0,
+    "name": "Neo einschwimmen",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-05-25T16:28:57Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
