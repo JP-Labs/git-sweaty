@@ -3349,5 +3349,18 @@
     "start_date_local": "2026-05-25T16:28:57Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-25",
+    "distance": 56743.7,
+    "elevation_gain": 289.7,
+    "id": "18658552736",
+    "moving_time": 9023.0,
+    "name": "Vom See heim",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-05-25T18:23:33Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
