@@ -3362,5 +3362,18 @@
     "start_date_local": "2026-05-25T18:23:33Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-05-27",
+    "distance": 2525.0,
+    "elevation_gain": 0.0,
+    "id": "18670466565",
+    "moving_time": 2663.0,
+    "name": "Sommer, Sonne, Hallenbad",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-05-27T06:10:08Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
