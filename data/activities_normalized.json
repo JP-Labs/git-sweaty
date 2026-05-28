@@ -3375,5 +3375,18 @@
     "start_date_local": "2026-05-27T06:10:08Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-28",
+    "distance": 7034.0,
+    "elevation_gain": 143.4,
+    "id": "18684609464",
+    "moving_time": 2342.0,
+    "name": "5K Z2 + 2K Schwelle",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-28T06:43:17Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
