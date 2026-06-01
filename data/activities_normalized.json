@@ -3427,5 +3427,44 @@
     "start_date_local": "2026-05-30T09:37:26Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-05-31",
+    "distance": 26416.8,
+    "elevation_gain": 141.4,
+    "id": "18732980150",
+    "moving_time": 3544.0,
+    "name": "Schwelle auf der Rolle",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-05-31T18:55:39Z",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "date": "2026-05-31",
+    "distance": 4157.4,
+    "elevation_gain": 115.0,
+    "id": "18733292190",
+    "moving_time": 1232.0,
+    "name": "Brick Run #1",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-31T19:56:34Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-01",
+    "distance": 2673.0,
+    "elevation_gain": 0.0,
+    "id": "18743393190",
+    "moving_time": 2997.0,
+    "name": "33m Bahn",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-06-01T16:37:30Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
