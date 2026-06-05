@@ -3479,5 +3479,18 @@
     "start_date_local": "2026-06-02T06:31:40Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-06-05",
+    "distance": 8038.4,
+    "elevation_gain": 207.9,
+    "id": "18792724837",
+    "moving_time": 2708.0,
+    "name": "Run am Ring",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-05T07:09:08Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
