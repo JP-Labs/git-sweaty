@@ -3492,5 +3492,18 @@
     "start_date_local": "2026-06-05T07:09:08Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-06-07",
+    "distance": 7243.7,
+    "elevation_gain": 150.7,
+    "id": "18820734404",
+    "moving_time": 2322.0,
+    "name": "Run am Ring 2\ufe0f\u20e3",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-07T11:04:58Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
