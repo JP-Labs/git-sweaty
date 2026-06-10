@@ -3505,5 +3505,31 @@
     "start_date_local": "2026-06-07T11:04:58Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-06-10",
+    "distance": 5067.0,
+    "elevation_gain": 13.9,
+    "id": "18866281393",
+    "moving_time": 1690.0,
+    "name": "5K easy woanders",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-10T17:10:10Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-10",
+    "distance": 1281.7,
+    "elevation_gain": 0.0,
+    "id": "18867573693",
+    "moving_time": 1408.0,
+    "name": "Senioren-Aquafitness Grrr",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-06-10T18:03:42Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
