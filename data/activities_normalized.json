@@ -3531,5 +3531,31 @@
     "start_date_local": "2026-06-10T18:03:42Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-06-12",
+    "distance": 2525.0,
+    "elevation_gain": 0.0,
+    "id": "18886822643",
+    "moving_time": 2995.0,
+    "name": "Heimische Gew\u00e4sser",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-06-12T06:12:30Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-12",
+    "distance": 10010.8,
+    "elevation_gain": 48.3,
+    "id": "18891915234",
+    "moving_time": 3141.0,
+    "name": "Nacktschnecken-Ausweichtraining",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-12T16:28:46Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
