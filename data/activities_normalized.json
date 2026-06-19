@@ -3570,5 +3570,18 @@
     "start_date_local": "2026-06-18T16:58:52Z",
     "type": "Walk",
     "year": 2026
+  },
+  {
+    "date": "2026-06-19",
+    "distance": 24263.4,
+    "elevation_gain": 190.4,
+    "id": "18983878908",
+    "moving_time": 3813.0,
+    "name": "Chillige Sommerrunde",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-06-19T13:37:54Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
