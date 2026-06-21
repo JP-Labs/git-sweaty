@@ -3583,5 +3583,31 @@
     "start_date_local": "2026-06-19T13:37:54Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-06-21",
+    "distance": 6138.7,
+    "elevation_gain": 17.6,
+    "id": "19006211854",
+    "moving_time": 1053.0,
+    "name": "Zum Stadtfest",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-06-21T08:30:13Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-21",
+    "distance": 6152.8,
+    "elevation_gain": 35.6,
+    "id": "19009590070",
+    "moving_time": 1202.0,
+    "name": "Stadtfest zur\u00fcck",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-06-21T13:47:53Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
