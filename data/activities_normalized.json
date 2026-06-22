@@ -3609,5 +3609,18 @@
     "start_date_local": "2026-06-21T13:47:53Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-06-21",
+    "distance": 53722.6,
+    "elevation_gain": 479.6,
+    "id": "19013924202",
+    "moving_time": 7860.0,
+    "name": "Noch eine vern\u00fcnftige Tour",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-06-21T18:08:45Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
