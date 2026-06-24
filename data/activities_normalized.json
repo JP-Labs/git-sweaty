@@ -3622,5 +3622,57 @@
     "start_date_local": "2026-06-21T18:08:45Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-06-23",
+    "distance": 25580.2,
+    "elevation_gain": 277.8,
+    "id": "19038835657",
+    "moving_time": 3856.0,
+    "name": "Feierabendrunde",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-06-23T18:29:34Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-24",
+    "distance": 5018.2,
+    "elevation_gain": 75.0,
+    "id": "19044140671",
+    "moving_time": 1734.0,
+    "name": "5K um 5 Uhr \ud83d\ude34",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-24T05:11:10Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-24",
+    "distance": 2000.0,
+    "elevation_gain": 0.0,
+    "id": "19044653471",
+    "moving_time": 2310.0,
+    "name": "Endlich wieder Schwimmen",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-06-24T06:14:02Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-24",
+    "distance": 1471.4,
+    "elevation_gain": 2.8,
+    "id": "19051223965",
+    "moving_time": 1904.0,
+    "name": "Freiwasser!",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-06-24T17:51:40Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
