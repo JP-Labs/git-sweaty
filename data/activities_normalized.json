@@ -3674,5 +3674,31 @@
     "start_date_local": "2026-06-24T17:51:40Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-06-25",
+    "distance": 24047.8,
+    "elevation_gain": 201.0,
+    "id": "19057567262",
+    "moving_time": 3296.0,
+    "name": "Wecker nochmal auf 5 Uhr",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-06-25T05:38:31Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-06-25",
+    "distance": 5083.6,
+    "elevation_gain": 34.2,
+    "id": "19057568080",
+    "moving_time": 1553.0,
+    "name": "Brickrun im Trisuit",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-06-25T06:35:01Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
