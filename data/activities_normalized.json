@@ -3700,5 +3700,18 @@
     "start_date_local": "2026-06-25T06:35:01Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-06-26",
+    "distance": 3000.0,
+    "elevation_gain": 0.0,
+    "id": "19069890581",
+    "moving_time": 3464.0,
+    "name": "Allein im Hallenbad",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-06-26T06:09:36Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
