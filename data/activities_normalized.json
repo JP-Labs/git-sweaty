@@ -3713,5 +3713,18 @@
     "start_date_local": "2026-06-26T06:09:36Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-06-27",
+    "distance": 44387.5,
+    "elevation_gain": 441.2,
+    "id": "19081437191",
+    "moving_time": 7111.0,
+    "name": "Zum Beachvolleyball-Turnier \ud83c\udfd0",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-06-27T06:38:53Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
