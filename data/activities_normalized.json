@@ -3804,5 +3804,18 @@
     "start_date_local": "2026-07-01T21:13:45Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-07-02",
+    "distance": 47966.6,
+    "elevation_gain": 291.2,
+    "id": "19153192387",
+    "moving_time": 7140.0,
+    "name": "Lockere Feierabendtour",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-02T17:14:38Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
