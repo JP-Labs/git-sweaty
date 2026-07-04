@@ -3817,5 +3817,31 @@
     "start_date_local": "2026-07-02T17:14:38Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-07-03",
+    "distance": 106479.0,
+    "elevation_gain": 984.1,
+    "id": "19166057333",
+    "moving_time": 15123.0,
+    "name": "Erste 100K f\u00fcr 2026 \ud83d\udd25",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-03T15:01:29Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-04",
+    "distance": 5033.8,
+    "elevation_gain": 74.5,
+    "id": "19171269107",
+    "moving_time": 1756.0,
+    "name": "5K doch nicht so easy",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-04T07:37:28Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
