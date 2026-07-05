@@ -3843,5 +3843,18 @@
     "start_date_local": "2026-07-04T07:37:28Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-07-05",
+    "distance": 2000.0,
+    "elevation_gain": 0.0,
+    "id": "19190011740",
+    "moving_time": 2300.0,
+    "name": "Wollte eigentlich drau\u00dfen Schwimmen",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-07-05T14:49:31Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
