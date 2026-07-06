@@ -3856,5 +3856,18 @@
     "start_date_local": "2026-07-05T14:49:31Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-07-05",
+    "distance": 6423.2,
+    "elevation_gain": 42.4,
+    "id": "19191944594",
+    "moving_time": 2072.0,
+    "name": "200m Sprints",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-05T17:50:03Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
