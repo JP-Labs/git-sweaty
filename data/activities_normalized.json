@@ -3895,5 +3895,18 @@
     "start_date_local": "2026-07-08T06:16:43Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-07-08",
+    "distance": 11027.1,
+    "elevation_gain": 52.4,
+    "id": "19233479919",
+    "moving_time": 3551.0,
+    "name": "Zu schw\u00fcl",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-08T20:36:12Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
