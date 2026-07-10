@@ -3908,5 +3908,31 @@
     "start_date_local": "2026-07-08T20:36:12Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-07-09",
+    "distance": 42148.7,
+    "elevation_gain": 455.8,
+    "id": "19246862712",
+    "moving_time": 7393.0,
+    "name": "Noch eine Seniorenausfahrt aber mit Eis",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-09T18:25:44Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-10",
+    "distance": 7043.7,
+    "elevation_gain": 129.5,
+    "id": "19251857079",
+    "moving_time": 2543.0,
+    "name": "Endlich Mal bei 15 Grad Laufen",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-10T07:00:38Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
