@@ -3934,5 +3934,44 @@
     "start_date_local": "2026-07-10T07:00:38Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-07-12",
+    "distance": 659.6,
+    "elevation_gain": 0.0,
+    "id": "19283356089",
+    "moving_time": 738.0,
+    "name": "Ha\u00dfmersheim",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-07-12T14:09:15Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-12",
+    "distance": 3974.3,
+    "elevation_gain": 44.8,
+    "id": "19283356138",
+    "moving_time": 1172.0,
+    "name": "Ha\u00dfmersheim",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-12T15:04:12Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-12",
+    "distance": 20652.3,
+    "elevation_gain": 80.9,
+    "id": "19283356210",
+    "moving_time": 2398.0,
+    "name": "Ha\u00dfmersheim",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-12T14:23:08Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
