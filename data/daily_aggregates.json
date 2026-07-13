@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T16:02:48.202270+00:00",
+  "generated_at": "2026-07-13T17:17:47.483066+00:00",
   "years": {
     "2024": {
       "Ride": {
@@ -2554,9 +2554,9 @@
             "19283356089"
           ],
           "count": 1,
-          "distance": 659.6,
+          "distance": 651.0,
           "elevation_gain": 0.0,
-          "moving_time": 738.0
+          "moving_time": 710.0
         }
       },
       "VirtualRide": {
