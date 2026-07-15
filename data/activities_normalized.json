@@ -3973,5 +3973,18 @@
     "start_date_local": "2026-07-12T14:23:08Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-07-15",
+    "distance": 2500.0,
+    "elevation_gain": 0.0,
+    "id": "19318546689",
+    "moving_time": 2891.0,
+    "name": "Letzte Woche Hallenbad \ud83d\ude14",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-07-15T06:08:58Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
