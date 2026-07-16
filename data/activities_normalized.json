@@ -3986,5 +3986,44 @@
     "start_date_local": "2026-07-15T06:08:58Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-07-15",
+    "distance": 6515.3,
+    "elevation_gain": 38.6,
+    "id": "19327213079",
+    "moving_time": 2123.0,
+    "name": "Brick Run mit Blaubeeren \ud83e\uded0",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-15T19:59:06Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-15",
+    "distance": 16926.8,
+    "elevation_gain": 61.4,
+    "id": "19327248479",
+    "moving_time": 2925.0,
+    "name": "Entspannt zum Fluss",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-15T17:22:39Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-15",
+    "distance": 17546.8,
+    "elevation_gain": 76.4,
+    "id": "19327248724",
+    "moving_time": 3070.0,
+    "name": "Entspannt zur\u00fcck",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-15T19:06:17Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
