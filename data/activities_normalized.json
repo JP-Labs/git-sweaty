@@ -4025,5 +4025,31 @@
     "start_date_local": "2026-07-15T19:06:17Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-07-16",
+    "distance": 8010.0,
+    "elevation_gain": 12.6,
+    "id": "19339106700",
+    "moving_time": 2650.0,
+    "name": "Tempo 2-1-1",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-16T18:10:00Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-17",
+    "distance": 2500.0,
+    "elevation_gain": 0.0,
+    "id": "19349774008",
+    "moving_time": 2717.0,
+    "name": "Doch nicht letztes Mal Hallenbad",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-07-17T14:04:13Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
