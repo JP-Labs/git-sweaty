@@ -4051,5 +4051,18 @@
     "start_date_local": "2026-07-17T14:04:13Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-07-17",
+    "distance": 41068.8,
+    "elevation_gain": 232.4,
+    "id": "19353071397",
+    "moving_time": 6004.0,
+    "name": "Rolle im Sommer \u26c8\ufe0f",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-07-17T18:37:41Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
