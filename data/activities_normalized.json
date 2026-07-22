@@ -4090,5 +4090,31 @@
     "start_date_local": "2026-07-19T16:45:10Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-07-21",
+    "distance": 27265.4,
+    "elevation_gain": 295.2,
+    "id": "19406382175",
+    "moving_time": 4185.0,
+    "name": "Hastige Feierabendrunde",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-21T18:07:32Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-22",
+    "distance": 2500.0,
+    "elevation_gain": 0.0,
+    "id": "19413708876",
+    "moving_time": 2737.0,
+    "name": "Jetzt aber letzte Woche Hallenbad \ud83d\ude14\ud83d\udeac",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-07-22T06:10:00Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
