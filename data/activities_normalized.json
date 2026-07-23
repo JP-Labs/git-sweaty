@@ -4116,5 +4116,18 @@
     "start_date_local": "2026-07-22T06:10:00Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-07-22",
+    "distance": 8044.9,
+    "elevation_gain": 12.7,
+    "id": "19420877107",
+    "moving_time": 2845.0,
+    "name": "Langweilige 8K",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-22T18:32:30Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
