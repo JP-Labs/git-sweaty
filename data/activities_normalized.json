@@ -4168,5 +4168,18 @@
     "start_date_local": "2026-07-24T14:30:31Z",
     "type": "Walk",
     "year": 2026
+  },
+  {
+    "date": "2026-07-25",
+    "distance": 13007.5,
+    "elevation_gain": 96.0,
+    "id": "19455615645",
+    "moving_time": 4398.0,
+    "name": "Long Run bei H\u00f6llenwetter",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-25T09:56:12Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
