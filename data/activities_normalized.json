@@ -4194,5 +4194,18 @@
     "start_date_local": "2026-07-26T09:58:42Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-07-26",
+    "distance": 7521.0,
+    "elevation_gain": 146.2,
+    "id": "19476514882",
+    "moving_time": 2664.0,
+    "name": "Es riecht nach Sommergewitter \ud83c\udf29\ufe0f",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-26T19:00:58Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
