@@ -4207,5 +4207,31 @@
     "start_date_local": "2026-07-26T19:00:58Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-07-28",
+    "distance": 2000.0,
+    "elevation_gain": 0.0,
+    "id": "19503930787",
+    "moving_time": 2250.0,
+    "name": "Freibad ist Kacke",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-07-28T18:14:54Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-29",
+    "distance": 27265.3,
+    "elevation_gain": 295.2,
+    "id": "19516954349",
+    "moving_time": 4198.0,
+    "name": "Geschmolzen",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-29T16:59:12Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
