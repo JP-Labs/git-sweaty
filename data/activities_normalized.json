@@ -4233,5 +4233,31 @@
     "start_date_local": "2026-07-29T16:59:12Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-07-30",
+    "distance": 6005.5,
+    "elevation_gain": 32.6,
+    "id": "19532532975",
+    "moving_time": 1675.0,
+    "name": "Stimme Firmenlauf",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-07-30T19:33:07Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-07-31",
+    "distance": 27250.7,
+    "elevation_gain": 292.8,
+    "id": "19544770438",
+    "moving_time": 4320.0,
+    "name": "Nach dem Race ist vor dem Race",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-31T17:21:01Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
