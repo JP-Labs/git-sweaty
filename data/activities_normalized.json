@@ -4259,5 +4259,44 @@
     "start_date_local": "2026-07-31T17:21:01Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-08-01",
+    "distance": 633.1,
+    "elevation_gain": 0.0,
+    "id": "19555533704",
+    "moving_time": 633.0,
+    "name": "Mainfrankentriathlon \u00b7 Swim",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-08-01T13:19:05Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-01",
+    "distance": 4632.9,
+    "elevation_gain": 17.2,
+    "id": "19555533742",
+    "moving_time": 1206.0,
+    "name": "Mainfrankentriathlon \u00b7 Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-01T14:13:29Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-01",
+    "distance": 19491.1,
+    "elevation_gain": 137.8,
+    "id": "19555533816",
+    "moving_time": 2382.0,
+    "name": "Mainfrankentriathlon \u00b7 Bike",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-08-01T13:31:26Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
