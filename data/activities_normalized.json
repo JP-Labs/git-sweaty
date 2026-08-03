@@ -4298,5 +4298,31 @@
     "start_date_local": "2026-08-01T13:31:26Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-08-02",
+    "distance": 10072.3,
+    "elevation_gain": 52.0,
+    "id": "19574928837",
+    "moving_time": 3707.0,
+    "name": "Recovery \u2728",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-02T20:43:52Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-03",
+    "distance": 12629.0,
+    "elevation_gain": 839.5,
+    "id": "19584885931",
+    "moving_time": 12500.0,
+    "name": "Urlaub!",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-08-03T13:23:47Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
