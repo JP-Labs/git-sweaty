@@ -4324,5 +4324,18 @@
     "start_date_local": "2026-08-03T13:23:47Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-08-04",
+    "distance": 17702.4,
+    "elevation_gain": 950.1,
+    "id": "19598953253",
+    "moving_time": 16808.0,
+    "name": "Wilde Wege am Schlegeisbach",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-08-04T11:15:18Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
