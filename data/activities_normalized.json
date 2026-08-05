@@ -4337,5 +4337,18 @@
     "start_date_local": "2026-08-04T11:15:18Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-08-05",
+    "distance": 20563.7,
+    "elevation_gain": 1544.0,
+    "id": "19612885937",
+    "moving_time": 18798.0,
+    "name": "Von der Halltalstra\u00dfe zur Bettelwurfh\u00fctte",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-08-05T09:36:54Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
