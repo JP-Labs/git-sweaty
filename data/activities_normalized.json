@@ -4350,5 +4350,44 @@
     "start_date_local": "2026-08-05T09:36:54Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-08-05",
+    "distance": 2000.0,
+    "elevation_gain": 0.0,
+    "id": "19615935806",
+    "moving_time": 2247.0,
+    "name": "\u00d6sterreichische Hallenb\u00e4der unsicher machen",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-08-05T18:56:06Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-06",
+    "distance": 11316.8,
+    "elevation_gain": 638.2,
+    "id": "19624443493",
+    "moving_time": 7625.0,
+    "name": "Von der Hinterkogel \u00fcber Trails zum Spitzerk\u00f6pfel",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-08-06T09:55:57Z",
+    "type": "Hike",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-07",
+    "distance": 11291.6,
+    "elevation_gain": 846.4,
+    "id": "19639810952",
+    "moving_time": 8105.0,
+    "name": "Issentalk\u00f6pfl und Biber \ud83e\uddab",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-08-07T11:37:55Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
