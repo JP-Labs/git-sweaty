@@ -4454,5 +4454,18 @@
     "start_date_local": "2026-08-13T05:56:29Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-08-13",
+    "distance": 1543.2,
+    "elevation_gain": 12.4,
+    "id": "19727902465",
+    "moving_time": 2310.0,
+    "name": "Algengr\u00fctze",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-08-13T18:15:04Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
