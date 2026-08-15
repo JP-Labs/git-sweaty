@@ -4467,5 +4467,31 @@
     "start_date_local": "2026-08-13T18:15:04Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-08-14",
+    "distance": 27220.0,
+    "elevation_gain": 285.4,
+    "id": "19742464619",
+    "moving_time": 4013.0,
+    "name": "Hausroute",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-08-14T19:27:26Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-15",
+    "distance": 15063.3,
+    "elevation_gain": 102.7,
+    "id": "19747849376",
+    "moving_time": 4700.0,
+    "name": "Progressive Repeat Long Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-15T08:09:47Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
