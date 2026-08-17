@@ -4506,5 +4506,31 @@
     "start_date_local": "2026-08-16T10:47:00Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-08-16",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "19770667672",
+    "moving_time": 1604.0,
+    "name": "Stretch & Stability Session 11 with Runna \u2705",
+    "raw_activity_type": "Yoga",
+    "raw_type": "Yoga",
+    "start_date_local": "2026-08-16T19:44:29Z",
+    "type": "Yoga",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-16",
+    "distance": 10021.7,
+    "elevation_gain": 64.9,
+    "id": "19771525997",
+    "moving_time": 3471.0,
+    "name": "Only Speedwork makes the dream work",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-16T20:36:29Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
