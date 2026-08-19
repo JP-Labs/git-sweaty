@@ -4532,5 +4532,18 @@
     "start_date_local": "2026-08-16T20:36:29Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-08-18",
+    "distance": 3000.0,
+    "elevation_gain": 0.0,
+    "id": "19797954466",
+    "moving_time": 3523.0,
+    "name": "Freie Bahn im Regen",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-08-18T18:04:39Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
