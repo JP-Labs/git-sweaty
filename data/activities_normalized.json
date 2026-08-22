@@ -4571,5 +4571,18 @@
     "start_date_local": "2026-08-20T18:31:15Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-08-21",
+    "distance": 8013.5,
+    "elevation_gain": 43.6,
+    "id": "19840205048",
+    "moving_time": 2751.0,
+    "name": "High Zone 2 oder so",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-21T19:01:29Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
