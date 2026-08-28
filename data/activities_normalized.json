@@ -4662,5 +4662,18 @@
     "start_date_local": "2026-08-27T17:57:26Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-08-28",
+    "distance": 50450.0,
+    "elevation_gain": 421.6,
+    "id": "19936853339",
+    "moving_time": 6963.0,
+    "name": "Indoor Long Ride",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-08-28T14:46:37Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
