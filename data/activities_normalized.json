@@ -4675,5 +4675,31 @@
     "start_date_local": "2026-08-28T14:46:37Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-08-29",
+    "distance": 10000.4,
+    "elevation_gain": 90.5,
+    "id": "19947393997",
+    "moving_time": 3194.0,
+    "name": "Ungeplant progressiv",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-29T12:11:39Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-29",
+    "distance": 2000.0,
+    "elevation_gain": 0.0,
+    "id": "19952845462",
+    "moving_time": 2184.0,
+    "name": "Sch\u00f6n beheizt \ud83e\udd7a",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-08-29T18:36:00Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
