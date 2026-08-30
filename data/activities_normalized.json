@@ -4701,5 +4701,31 @@
     "start_date_local": "2026-08-29T18:36:00Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-08-30",
+    "distance": 7621.0,
+    "elevation_gain": 41.2,
+    "id": "19963925423",
+    "moving_time": 2520.0,
+    "name": "Hm.",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-08-30T15:13:52Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-08-30",
+    "distance": 26658.9,
+    "elevation_gain": 260.0,
+    "id": "19964400655",
+    "moving_time": 4786.0,
+    "name": "Cozy Sunday Ausfahrt mit den Eltern",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-08-30T13:36:08Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
