@@ -4753,5 +4753,18 @@
     "start_date_local": "2026-09-01T17:39:00Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-09-02",
+    "distance": 7014.3,
+    "elevation_gain": 37.8,
+    "id": "20009553692",
+    "moving_time": 2356.0,
+    "name": "Taper 400s",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-09-02T19:37:15Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
