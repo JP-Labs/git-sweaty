@@ -4760,10 +4760,23 @@
     "elevation_gain": 37.8,
     "id": "20009553692",
     "moving_time": 2356.0,
-    "name": "Taper 400s",
+    "name": "Interv\u00e4llchen",
     "raw_activity_type": "Run",
     "raw_type": "Run",
     "start_date_local": "2026-09-02T19:37:15Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-09-03",
+    "distance": 5084.0,
+    "elevation_gain": 79.4,
+    "id": "20022534658",
+    "moving_time": 1804.0,
+    "name": "Jetzt Wraps \ud83c\udf2e",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-09-03T18:31:49Z",
     "type": "Run",
     "year": 2026
   }
