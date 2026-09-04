@@ -4779,5 +4779,18 @@
     "start_date_local": "2026-09-03T18:31:49Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-09-04",
+    "distance": 48309.5,
+    "elevation_gain": 394.0,
+    "id": "20035493183",
+    "moving_time": 7056.0,
+    "name": "M\u00fcde strampeln f\u00fcr den Spieleabend \ud83c\udfb2",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-09-04T15:49:29Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
