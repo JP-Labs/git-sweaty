@@ -4883,5 +4883,31 @@
     "start_date_local": "2026-09-10T17:03:47Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-09-11",
+    "distance": 3376.5,
+    "elevation_gain": 26.6,
+    "id": "20132497312",
+    "moving_time": 1195.0,
+    "name": "Schuhe aktivieren",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-09-11T18:23:54Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-09-11",
+    "distance": 1500.0,
+    "elevation_gain": 0.0,
+    "id": "20132525653",
+    "moving_time": 1660.0,
+    "name": "Muskeln aktivieren",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-09-11T17:38:00Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
