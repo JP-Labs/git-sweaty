@@ -4922,5 +4922,18 @@
     "start_date_local": "2026-09-12T14:10:56Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-09-15",
+    "distance": 24994.2,
+    "elevation_gain": 314.6,
+    "id": "20189132274",
+    "moving_time": 4754.0,
+    "name": "Familienausfahrt",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-09-15T18:35:19Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
