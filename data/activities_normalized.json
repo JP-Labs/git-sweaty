@@ -4948,5 +4948,18 @@
     "start_date_local": "2026-09-16T06:04:30Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-09-18",
+    "distance": 2500.0,
+    "elevation_gain": 0.0,
+    "id": "20222984441",
+    "moving_time": 2700.0,
+    "name": "Chlor am Morgen",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-09-18T06:10:00Z",
+    "type": "Swim",
+    "year": 2026
   }
 ]
