@@ -4961,5 +4961,18 @@
     "start_date_local": "2026-09-18T06:10:00Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "date": "2026-09-21",
+    "distance": 4001.4,
+    "elevation_gain": 216.2,
+    "id": "20272392535",
+    "moving_time": 3894.0,
+    "name": "Mikro-Wanderung zum Steall Wasserfall",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-09-21T15:52:17Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
