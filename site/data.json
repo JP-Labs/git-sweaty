@@ -2834,6 +2834,20 @@
       "subtype": "Hike",
       "type": "Hike",
       "year": 2026
+    },
+    {
+      "date": "2026-09-29",
+      "hour": 17,
+      "subtype": "WeightTraining",
+      "type": "WeightTraining",
+      "year": 2026
+    },
+    {
+      "date": "2026-09-29",
+      "hour": 16,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -5375,6 +5389,15 @@
           "distance": 18000.0,
           "elevation_gain": 0.0,
           "moving_time": 9660.0
+        },
+        "2026-09-29": {
+          "activity_ids": [
+            "20380393813"
+          ],
+          "count": 1,
+          "distance": 1428.6,
+          "elevation_gain": 0.0,
+          "moving_time": 600.0
         }
       },
       "Swim": {
@@ -6339,6 +6362,17 @@
           "moving_time": 4780.0
         }
       },
+      "WeightTraining": {
+        "2026-09-29": {
+          "activity_ids": [
+            "20380377394"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 3600.0
+        }
+      },
       "Yoga": {
         "2026-08-16": {
           "activity_ids": [
@@ -6379,7 +6413,7 @@
       }
     }
   },
-  "generated_at": "2026-09-28T21:09:27.182007+00:00",
+  "generated_at": "2026-09-29T19:53:38.103967+00:00",
   "other_bucket": "OtherSports",
   "repo": "JP-Labs/git-sweaty",
   "source": "strava",
@@ -6408,6 +6442,10 @@
       "accent": "#d6ff6b",
       "label": "Walk"
     },
+    "WeightTraining": {
+      "accent": "#ff71ce",
+      "label": "Weight Training"
+    },
     "Yoga": {
       "accent": "#f15bb5",
       "label": "Yoga"
@@ -6420,6 +6458,7 @@
     "Swim",
     "VirtualRide",
     "Walk",
+    "WeightTraining",
     "Yoga"
   ],
   "units": {

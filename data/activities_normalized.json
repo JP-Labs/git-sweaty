@@ -5013,5 +5013,31 @@
     "start_date_local": "2026-09-24T10:06:00Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-09-29",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20380377394",
+    "moving_time": 3600.0,
+    "name": "Probetraining",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-09-29T17:00:56Z",
+    "type": "WeightTraining",
+    "year": 2026
+  },
+  {
+    "date": "2026-09-29",
+    "distance": 1428.6,
+    "elevation_gain": 0.0,
+    "id": "20380393813",
+    "moving_time": 600.0,
+    "name": "WU",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-09-29T16:50:00Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
