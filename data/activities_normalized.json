@@ -5078,5 +5078,18 @@
     "start_date_local": "2026-10-03T13:47:21Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-04",
+    "distance": 43377.1,
+    "elevation_gain": 633.4,
+    "id": "20448211797",
+    "moving_time": 7119.0,
+    "name": "Sonnige Herbstausfahrt \ud83c\udf42",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-10-04T13:22:15Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
