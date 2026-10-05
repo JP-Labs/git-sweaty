@@ -5091,5 +5091,31 @@
     "start_date_local": "2026-10-04T13:22:15Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-10-05",
+    "distance": 7049.0,
+    "elevation_gain": 0.0,
+    "id": "20463153529",
+    "moving_time": 2329.0,
+    "name": "Laufi Laufband",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-05T18:36:39Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-05",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20464423165",
+    "moving_time": 4948.0,
+    "name": "Einfach 2h Gym",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-10-05T19:24:24Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
