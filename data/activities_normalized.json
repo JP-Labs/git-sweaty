@@ -5117,5 +5117,31 @@
     "start_date_local": "2026-10-05T19:24:24Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-10-07",
+    "distance": 2500.0,
+    "elevation_gain": 0.0,
+    "id": "20485095010",
+    "moving_time": 2965.0,
+    "name": "Flamingo \ud83e\udda9",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-10-07T06:05:00Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-07",
+    "distance": 7240.8,
+    "elevation_gain": 39.9,
+    "id": "20492110199",
+    "moving_time": 2307.0,
+    "name": "Fartlek in der D\u00e4mmerung",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-07T18:54:52Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
