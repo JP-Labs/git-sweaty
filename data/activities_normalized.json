@@ -5143,5 +5143,44 @@
     "start_date_local": "2026-10-07T18:54:52Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-08",
+    "distance": 16127.8,
+    "elevation_gain": 373.0,
+    "id": "20501804895",
+    "moving_time": 3307.0,
+    "name": "Produktive Mittagspause",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-10-08T13:31:57Z",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-08",
+    "distance": 2050.0,
+    "elevation_gain": 0.0,
+    "id": "20505201534",
+    "moving_time": 734.0,
+    "name": "Minikilometer sammeln",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-08T17:57:04Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-08",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20505508199",
+    "moving_time": 4960.0,
+    "name": "Winter Arc lol \ud83d\udcaa",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-10-08T18:10:50Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
