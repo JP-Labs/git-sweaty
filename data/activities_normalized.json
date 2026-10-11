@@ -5221,5 +5221,18 @@
     "start_date_local": "2026-10-10T10:40:34Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-11",
+    "distance": 41121.0,
+    "elevation_gain": 652.0,
+    "id": "20539090086",
+    "moving_time": 6544.0,
+    "name": "Long Ride, aber langweilig",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-10-11T10:29:02Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
