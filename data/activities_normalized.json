@@ -5260,5 +5260,18 @@
     "start_date_local": "2026-10-12T17:55:58Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-13",
+    "distance": 9400.6,
+    "elevation_gain": 67.3,
+    "id": "20570809664",
+    "moving_time": 3132.0,
+    "name": "1. Mal Laufbahn \ud83e\udd79",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-13T18:09:31Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
