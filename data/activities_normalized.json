@@ -5273,5 +5273,31 @@
     "start_date_local": "2026-10-13T18:09:31Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-14",
+    "distance": 2200.0,
+    "elevation_gain": 0.0,
+    "id": "20577142942",
+    "moving_time": 2336.0,
+    "name": "Technik + Recovery",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-10-14T06:02:47Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-14",
+    "distance": 19318.0,
+    "elevation_gain": 168.0,
+    "id": "20584699721",
+    "moving_time": 2885.0,
+    "name": "Recovery auf der Rolle",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-10-14T18:13:52Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
