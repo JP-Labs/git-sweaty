@@ -5299,5 +5299,44 @@
     "start_date_local": "2026-10-14T18:13:52Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-10-15",
+    "distance": 6067.4,
+    "elevation_gain": 111.0,
+    "id": "20593631717",
+    "moving_time": 2054.0,
+    "name": "H\u00fcgel als Mittagssnack",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-15T12:16:56Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-15",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20598452646",
+    "moving_time": 4851.0,
+    "name": "Langsam routiniert",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-10-15T17:50:55Z",
+    "type": "WeightTraining",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-15",
+    "distance": 1300.0,
+    "elevation_gain": 0.0,
+    "id": "20598524199",
+    "moving_time": 600.0,
+    "name": "Warm Spazieren",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-15T17:45:59Z",
+    "type": "Run",
+    "year": 2026
   }
 ]

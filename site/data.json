@@ -2988,6 +2988,27 @@
       "subtype": "VirtualRide",
       "type": "VirtualRide",
       "year": 2026
+    },
+    {
+      "date": "2026-10-15",
+      "hour": 12,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
+    },
+    {
+      "date": "2026-10-15",
+      "hour": 17,
+      "subtype": "WeightTraining",
+      "type": "WeightTraining",
+      "year": 2026
+    },
+    {
+      "date": "2026-10-15",
+      "hour": 17,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -5610,6 +5631,16 @@
           "distance": 9400.6,
           "elevation_gain": 67.3,
           "moving_time": 3132.0
+        },
+        "2026-10-15": {
+          "activity_ids": [
+            "20593631717",
+            "20598524199"
+          ],
+          "count": 2,
+          "distance": 7367.4,
+          "elevation_gain": 111.0,
+          "moving_time": 2654.0
         }
       },
       "Swim": {
@@ -6691,6 +6722,15 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 4864.0
+        },
+        "2026-10-15": {
+          "activity_ids": [
+            "20598452646"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 4851.0
         }
       },
       "Yoga": {
@@ -6733,7 +6773,7 @@
       }
     }
   },
-  "generated_at": "2026-10-14T19:14:56.200898+00:00",
+  "generated_at": "2026-10-15T18:58:41.847532+00:00",
   "other_bucket": "OtherSports",
   "repo": "JP-Labs/git-sweaty",
   "source": "strava",
