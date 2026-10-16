@@ -5338,5 +5338,18 @@
     "start_date_local": "2026-10-15T17:45:59Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-16",
+    "distance": 23739.2,
+    "elevation_gain": 417.0,
+    "id": "20610087642",
+    "moving_time": 3608.0,
+    "name": "4 x 3min High Intensity",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-10-16T16:36:32Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
