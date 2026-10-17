@@ -5351,5 +5351,31 @@
     "start_date_local": "2026-10-16T16:36:32Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-10-17",
+    "distance": 2150.0,
+    "elevation_gain": 0.0,
+    "id": "20617243419",
+    "moving_time": 2328.0,
+    "name": "Rechts vor links",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-10-17T09:02:10Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-17",
+    "distance": 12018.4,
+    "elevation_gain": 56.7,
+    "id": "20620279043",
+    "moving_time": 3979.0,
+    "name": "Risk of Rain",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-17T12:41:31Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
