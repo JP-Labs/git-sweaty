@@ -5429,5 +5429,31 @@
     "start_date_local": "2026-10-20T18:14:26Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-21",
+    "distance": 2025.0,
+    "elevation_gain": 0.0,
+    "id": "20670265211",
+    "moving_time": 2201.0,
+    "name": "Sch\u00f6n",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-10-21T06:04:03Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-21",
+    "distance": 27521.1,
+    "elevation_gain": 179.0,
+    "id": "20677848654",
+    "moving_time": 3485.0,
+    "name": "30min Sub-Threshold",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-10-21T18:32:55Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
