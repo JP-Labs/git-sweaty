@@ -5455,5 +5455,44 @@
     "start_date_local": "2026-10-21T18:32:55Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-10-23",
+    "distance": 3000.0,
+    "elevation_gain": 0.0,
+    "id": "20696659258",
+    "moving_time": 3262.0,
+    "name": "Von \ud83e\udd75 zu \ud83c\udf04",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-10-23T06:03:34Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-23",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20699866051",
+    "moving_time": 4744.0,
+    "name": "Friday Gym",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-10-23T13:01:17Z",
+    "type": "WeightTraining",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-23",
+    "distance": 9503.1,
+    "elevation_gain": 267.0,
+    "id": "20702928777",
+    "moving_time": 1998.0,
+    "name": "Bissel ausrollen am Abend",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-10-23T18:36:57Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
