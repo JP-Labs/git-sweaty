@@ -5520,5 +5520,18 @@
     "start_date_local": "2026-10-25T16:00:50Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "date": "2026-10-26",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20740383080",
+    "moving_time": 5300.0,
+    "name": "Pumpen",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-10-26T17:25:55Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
