@@ -5533,5 +5533,31 @@
     "start_date_local": "2026-10-26T17:25:55Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-10-28",
+    "distance": 1750.0,
+    "elevation_gain": 0.0,
+    "id": "20760673203",
+    "moving_time": 1978.0,
+    "name": "Deload Swim",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-10-28T06:08:42Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-28",
+    "distance": 5162.1,
+    "elevation_gain": 35.0,
+    "id": "20767924397",
+    "moving_time": 1665.0,
+    "name": "Wird langsam kalt",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-10-28T18:00:03Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
