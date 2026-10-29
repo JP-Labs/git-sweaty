@@ -5559,5 +5559,18 @@
     "start_date_local": "2026-10-28T18:00:03Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-10-29",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20781452569",
+    "moving_time": 4837.0,
+    "name": "Une Vie \u00c0 T\u2019aimer",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-10-29T17:30:36Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
