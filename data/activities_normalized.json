@@ -5572,5 +5572,31 @@
     "start_date_local": "2026-10-29T17:30:36Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-10-30",
+    "distance": 2100.0,
+    "elevation_gain": 0.0,
+    "id": "20787097406",
+    "moving_time": 2281.0,
+    "name": "\ud83c\udf05",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-10-30T06:06:19Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-10-30",
+    "distance": 28503.9,
+    "elevation_gain": 187.0,
+    "id": "20792883852",
+    "moving_time": 3724.0,
+    "name": "Z1/Z2 Deload Ride",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-10-30T16:09:11Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
