@@ -5611,5 +5611,18 @@
     "start_date_local": "2026-10-31T10:41:59Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-11-01",
+    "distance": 24183.4,
+    "elevation_gain": 392.0,
+    "id": "20821051194",
+    "moving_time": 4502.0,
+    "name": "Slow & Steady",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-01T17:47:44Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
