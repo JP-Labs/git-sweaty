@@ -5637,5 +5637,18 @@
     "start_date_local": "2026-11-02T17:34:08Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-11-03",
+    "distance": 6031.9,
+    "elevation_gain": 90.4,
+    "id": "20845961596",
+    "moving_time": 2171.0,
+    "name": "Stirnlampen-Action",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-03T18:18:03Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
