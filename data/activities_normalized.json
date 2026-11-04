@@ -5650,5 +5650,31 @@
     "start_date_local": "2026-11-03T18:18:03Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-11-04",
+    "distance": 2075.0,
+    "elevation_gain": 0.0,
+    "id": "20852430413",
+    "moving_time": 2289.0,
+    "name": "R\u00fcckenschwimmer Grrrr",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-11-04T06:26:20Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-11-04",
+    "distance": 14562.4,
+    "elevation_gain": 322.0,
+    "id": "20859962271",
+    "moving_time": 3002.0,
+    "name": "2 x 10min Sweet Spot",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-04T19:17:42Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
