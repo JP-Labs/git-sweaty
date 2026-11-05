@@ -5676,5 +5676,18 @@
     "start_date_local": "2026-11-04T19:17:42Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-11-05",
+    "distance": 15470.3,
+    "elevation_gain": 403.0,
+    "id": "20872774713",
+    "moving_time": 3601.0,
+    "name": "Bissel Z2",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-05T18:45:31Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
