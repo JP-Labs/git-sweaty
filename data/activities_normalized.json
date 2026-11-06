@@ -5689,5 +5689,31 @@
     "start_date_local": "2026-11-05T18:45:31Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-11-06",
+    "distance": 2025.0,
+    "elevation_gain": 0.0,
+    "id": "20878707821",
+    "moving_time": 2184.0,
+    "name": "Intervalle auf fast leerem Magen",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-11-06T06:03:57Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-11-06",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20882700827",
+    "moving_time": 4644.0,
+    "name": "Feierabendaktivit\u00e4t am Freitag",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-11-06T13:30:54Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
