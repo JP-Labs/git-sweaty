@@ -5715,5 +5715,18 @@
     "start_date_local": "2026-11-06T13:30:54Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-11-07",
+    "distance": 9300.0,
+    "elevation_gain": 150.2,
+    "id": "20896948713",
+    "moving_time": 3041.0,
+    "name": "Sch\u00f6ner Herbst \ud83c\udf42",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-07T15:34:10Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
