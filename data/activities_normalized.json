@@ -5728,5 +5728,18 @@
     "start_date_local": "2026-11-07T15:34:10Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-11-08",
+    "distance": 20994.4,
+    "elevation_gain": 709.0,
+    "id": "20912022265",
+    "moving_time": 5402.0,
+    "name": "Long Ride Z2",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-08T17:09:28Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
