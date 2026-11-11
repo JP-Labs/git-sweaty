@@ -5754,5 +5754,31 @@
     "start_date_local": "2026-11-09T17:56:06Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-11-11",
+    "distance": 1700.0,
+    "elevation_gain": 0.0,
+    "id": "20942585144",
+    "moving_time": 1957.0,
+    "name": "Mies verpennt",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-11-11T06:52:38Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-11-11",
+    "distance": 6518.2,
+    "elevation_gain": 123.8,
+    "id": "20950735845",
+    "moving_time": 2256.0,
+    "name": "Nebel, Wald & Dunkelheit",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-11T18:57:12Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
