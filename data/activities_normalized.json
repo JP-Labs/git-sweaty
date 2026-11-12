@@ -5780,5 +5780,31 @@
     "start_date_local": "2026-11-11T18:57:12Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-11-12",
+    "distance": 26018.4,
+    "elevation_gain": 189.0,
+    "id": "20959453195",
+    "moving_time": 3607.0,
+    "name": "W\u00e4sche zusammenlegen",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-12T13:58:31Z",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "date": "2026-11-12",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "20963347645",
+    "moving_time": 4768.0,
+    "name": "Copenhagen Pain",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-11-12T18:39:05Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
