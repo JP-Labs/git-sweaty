@@ -5806,5 +5806,31 @@
     "start_date_local": "2026-11-12T18:39:05Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-11-13",
+    "distance": 2350.0,
+    "elevation_gain": 0.0,
+    "id": "20968254022",
+    "moving_time": 2787.0,
+    "name": "\ud83d\udc1f",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-11-13T06:10:47Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-11-13",
+    "distance": 33304.9,
+    "elevation_gain": 228.0,
+    "id": "20973288717",
+    "moving_time": 4202.0,
+    "name": "Sweet Spot 3x12 min",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-13T16:36:23Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
