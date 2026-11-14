@@ -5832,5 +5832,18 @@
     "start_date_local": "2026-11-13T16:36:23Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-11-14",
+    "distance": 10166.3,
+    "elevation_gain": 141.4,
+    "id": "20984762940",
+    "moving_time": 3395.0,
+    "name": "Auf gesperrter Landstra\u00dfe \ud83d\udea7\ud83c\udf41",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-14T13:58:36Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
