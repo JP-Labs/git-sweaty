@@ -5845,5 +5845,18 @@
     "start_date_local": "2026-11-14T13:58:36Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "date": "2026-11-15",
+    "distance": 30753.6,
+    "elevation_gain": 780.0,
+    "id": "21001310553",
+    "moving_time": 6302.0,
+    "name": "Long Ride im Kerzenlicht \ud83d\udd6f\ufe0f",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-15T17:57:51Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
