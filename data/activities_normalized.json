@@ -5871,5 +5871,31 @@
     "start_date_local": "2026-11-16T17:40:11Z",
     "type": "WeightTraining",
     "year": 2026
+  },
+  {
+    "date": "2026-11-18",
+    "distance": 2025.0,
+    "elevation_gain": 0.0,
+    "id": "21030545125",
+    "moving_time": 2339.0,
+    "name": "Hatte keine Lust",
+    "raw_activity_type": "Swim",
+    "raw_type": "Swim",
+    "start_date_local": "2026-11-18T06:17:11Z",
+    "type": "Swim",
+    "year": 2026
+  },
+  {
+    "date": "2026-11-18",
+    "distance": 21032.7,
+    "elevation_gain": 570.0,
+    "id": "21036817341",
+    "moving_time": 4201.0,
+    "name": "2x20min Sweetspot",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-18T17:06:44Z",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
