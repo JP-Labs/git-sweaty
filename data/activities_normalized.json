@@ -5897,5 +5897,18 @@
     "start_date_local": "2026-11-18T17:06:44Z",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "date": "2026-11-20",
+    "distance": 7256.0,
+    "elevation_gain": 70.0,
+    "id": "21062551768",
+    "moving_time": 2549.0,
+    "name": "Sch\u00f6n an der Promenade",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-20T19:22:01Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
