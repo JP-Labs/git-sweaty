@@ -5949,5 +5949,18 @@
     "start_date_local": "2026-11-23T09:16:20Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-11-24",
+    "distance": 10221.4,
+    "elevation_gain": 271.0,
+    "id": "21107911686",
+    "moving_time": 10052.0,
+    "name": "PR13 \u00b7 Vereda do Fanal \ud83c\udf2b\ufe0f",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-11-24T09:55:46Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
