@@ -5962,5 +5962,18 @@
     "start_date_local": "2026-11-24T09:55:46Z",
     "type": "Hike",
     "year": 2026
+  },
+  {
+    "date": "2026-11-25",
+    "distance": 11726.1,
+    "elevation_gain": 749.0,
+    "id": "21121242976",
+    "moving_time": 10641.0,
+    "name": "Nun\u2018s Valley",
+    "raw_activity_type": "Hike",
+    "raw_type": "Hike",
+    "start_date_local": "2026-11-25T11:51:39Z",
+    "type": "Hike",
+    "year": 2026
   }
 ]
